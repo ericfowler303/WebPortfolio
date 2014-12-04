@@ -13,7 +13,7 @@ namespace Portfolio.Controllers
         {
             return View();
         }
-        // GET: Home
+        // GET: Home/Work
         public ActionResult Work()
         {
             return View();
