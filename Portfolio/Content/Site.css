@@ -42,7 +42,7 @@ textarea {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(/Content/code-bg.jpg) no-repeat center center;
+    background: url(./code-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -90,4 +90,14 @@ textarea {
     .intro-divider {
         width: 100%;
     }
+}
+
+.gamecontainer{
+    margin-top:20px;
+}
+.gameEXElink {
+    text-align: right;
+}
+.gameGithublink {
+    text-align:left;
 }
