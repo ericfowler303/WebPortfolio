@@ -91,9 +91,12 @@ textarea {
         width: 100%;
     }
 }
-
 .gamecontainer{
-    margin-top:20px;
+    margin-top:26px;
+}
+.gamecontainer img {
+    height:330px;
+    width:auto;
 }
 .gameEXElink {
     text-align: right;
