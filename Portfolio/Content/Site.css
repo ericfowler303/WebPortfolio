@@ -22,6 +22,7 @@ select,
 textarea {
     max-width: 280px;
 }
+
 /* Change the color of the top nav bar*/
 .navbar, .navbar-inverse {
     background-color: #418ab3;
@@ -35,6 +36,14 @@ textarea {
 }
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #999;
+}
+
+/* Alter the brand image for the headshot*/
+.navbar-brand {
+    padding-top:10px; padding-bottom:10px;
+}
+.navbar-brand img {
+    margin-left:2em;
 }
 
 .intro-header {
@@ -91,6 +100,8 @@ textarea {
         width: 100%;
     }
 }
+
+/* Game container tweaks*/
 .gamecontainer{
     margin-top:26px;
 }

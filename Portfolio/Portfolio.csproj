@@ -103,6 +103,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\code-bg.jpg" />
+    <Content Include="Content\EricHeadshot.jpg" />
     <Content Include="Content\font-awesome-4.2.0\css\font-awesome.css" />
     <Content Include="Content\font-awesome-4.2.0\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
@@ -112,6 +113,7 @@
     <Content Include="Content\Site.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Work\Hangman.exe" />
     <Content Include="Global.asax" />
     <Content Include="Models\BlogDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
