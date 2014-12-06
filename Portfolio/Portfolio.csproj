@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Work\CheeseFinder.exe" />
     <Content Include="Content\code-bg.jpg" />
     <Content Include="Content\EricHeadshot.jpg" />
     <Content Include="Content\font-awesome-4.2.0\css\font-awesome.css" />
