@@ -12,19 +12,23 @@
             </p>
         </div>
         <div class="col-md-6 column">
-            <form role="form">
+            @using (Html.BeginForm("SendContact", "Contact", FormMethod.Post))
+            {
                 <div class="form-group">
-                    <label for="contactFullName">Full Name</label><input type="text" class="form-control" id="contactFullName" />
+                    <label for="fullname">Your Name</label>
+                    <input type="text" name="fullname" />
                 </div>
                 <div class="form-group">
-                    <label for="contactInputEmail">Email address</label><input type="email" class="form-control" id="contactInputEmail" />
+                    <label for="emailAddress">Your Email</label>
+                    <input type="email" name="emailAddress" />
                 </div>
                 <div class="form-group">
-                    <label for="contactNotes">Notes</label><input type="text" class="form-control" id="contactNotes" />
+                    <label for="body">Comment</label>
+                    <textarea name="body"></textarea>
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-        </div>
+                <input type="submit" class="btn btn-default" value="Submit Comment" />
+            }
+    </div>
         <div class="col-md-2 column">
         </div>
     </div>
