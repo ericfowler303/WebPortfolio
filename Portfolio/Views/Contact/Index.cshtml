@@ -1,6 +1,31 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Contact";
     Layout = "~/Views/_Layout.cshtml";
 }
-
+<div style="margin-top:30px;"></div>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-2 column">
+            <p>
+                If you have any questions or want to know more about me feel free to fill out this contact form and
+                I'll be happy to get back to you about anything.
+            </p>
+        </div>
+        <div class="col-md-6 column">
+            <form role="form">
+                <div class="form-group">
+                    <label for="contactFullName">Full Name</label><input type="text" class="form-control" id="contactFullName" />
+                </div>
+                <div class="form-group">
+                    <label for="contactInputEmail">Email address</label><input type="email" class="form-control" id="contactInputEmail" />
+                </div>
+                <div class="form-group">
+                    <label for="contactNotes">Notes</label><input type="text" class="form-control" id="contactNotes" />
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-2 column">
+        </div>
+    </div>
+</div>
