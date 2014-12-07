@@ -8,10 +8,13 @@ namespace Portfolio.Controllers
 {
     public class BlogController : Controller
     {
+        Models.BlogEntities dbEntities = new Models.BlogEntities();
+
         // GET: Blog
         public ActionResult Index()
         {
-            return View();
+            var postList = dbEntities.BlogPosts.OrderByDescending(x => x.DateCreated);
+            return View(postList);
         }
     }
 }

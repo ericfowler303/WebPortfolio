@@ -1,8 +1,56 @@
-﻿
+﻿@model IEnumerable<Portfolio.Models.BlogPost>
 @{
     ViewBag.Title = "Blog";
     Layout = "~/Views/_Layout.cshtml";
 }
 
-
-
+@foreach (var post in Model)
+{ 
+    <div style="margin-top:20px;"></div>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="row clearfix">
+                    <div class="col-md-8 column">
+                        <h3>
+                            @post.Title
+                        </h3>
+                        <p>
+                           @Html.Raw(post.Body.Trim())
+                        </p>
+                    </div>
+                    <div class="col-md-4 column">
+                        @if (!string.IsNullOrEmpty(post.ImageUrl))
+                        {
+                            <img alt="140x140" width="140" height="140" src="@post.ImageUrl" class="img-thumbnail" />
+                        }
+                    </div>
+                </div>
+                <div class="row clearfix" style="margin-bottom:20px;">
+                    <div class="col-md-4 column">
+                        Post by: Eric Fowler
+                    </div>
+                    <div class="col-md-4 column">
+                        Posted on: @post.DateCreated
+                    </div>
+                    <div class="col-md-4 column">
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-md-4 column">
+                        Comment at: by: 
+                    </div>
+                    <div class="col-md-8 column">
+                        Comment text
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    if (!(post == Model.Last()))
+    { 
+        <div class="container" style="margin-top:15px;margin-bottom:15px;">
+            <div class="line-separator"></div>
+        </div>
+    }
+}
