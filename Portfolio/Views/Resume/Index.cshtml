@@ -3,18 +3,8 @@
     ViewBag.Title = "Resume";
     Layout = "~/Views/_Layout.cshtml";
 }
-
-<script type="text/javascript" src="~/Scripts/pdfobject.min.js"></script>
-<div id="pdf1" style="width:100%; height:100%;"></div>
-<script type='text/javascript'>
-    var myPDF = new PDFObject({
-        url: 'http://students.seedpaths.com/eric-fowler/Content/resume.pdf',
-        pdfOpenParams: {
-        view: 'Fit',
-        scrollbars: '0',
-    toolbar: '0',
-    statusbar: '0',
-    navpanes: '0' }
-    }).embed('pdf1');
-</script>
-
+<div class="container fill"style="margin-top:25px; height:100vh;">
+        <object data="~/Content/resume.pdf" type="application/pdf" style="width:100%;height:100vh;">
+           alt : <a href="~/Content/resume.pdf">Download my resume PDF to view it.</a>
+        </object>
+</div>
