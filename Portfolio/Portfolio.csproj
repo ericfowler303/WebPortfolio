@@ -202,7 +202,6 @@
     <Content Include="packages.config" />
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Content\resume.pdf" />
     <Content Include="Views\Resume\Index.cshtml" />
     <Content Include="Views\Home\Work.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
@@ -260,6 +259,8 @@
     <Content Include="Models\ContactForm.edmx.diagram">
       <DependentUpon>ContactForm.edmx</DependentUpon>
     </Content>
+    <Content Include="Views\Contact\ThankYou.cshtml" />
+    <Content Include="Content\resume.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

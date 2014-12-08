@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Thanks for the Contact";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <h3>
+            Thanks,
+            @Html.Encode(ViewData["name"])
+            for sending the contact.
+        </h3>
+    </div>
+</div>
+

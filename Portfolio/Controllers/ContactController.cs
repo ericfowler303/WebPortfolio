@@ -21,8 +21,8 @@ namespace Portfolio.Controllers
             // Add the contact info to the database
             contactDb.AddNewContact(values["fullname"],values["emailAddress"],values["body"]);
             contactDb.SaveChanges();
-
-            return Content("Thanks for your submission.");
+            ViewData["name"] = values["fullname"];
+            return View("ThankYou");
         }
     }
 }
