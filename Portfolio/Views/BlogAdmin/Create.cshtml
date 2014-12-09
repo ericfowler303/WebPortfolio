@@ -1,0 +1,25 @@
+﻿@model Portfolio.Models.BlogPost
+@{
+    ViewBag.Title = "Create a Post";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2>Create a post</h2>
+    <form action="@Url.Action("Create", "BlogAdmin")" method="post">
+        @Html.LabelFor(x => x.Title)
+        @Html.EditorFor(x=>x.Title)
+        @Html.ValidationMessageFor(x=>x.Title)
+        <br/><br/>
+        @Html.LabelFor(x=>x.Body)
+        @Html.EditorFor(x=>x.Body)
+        @Html.ValidationMessageFor(x=>x.Body)
+        <br /><br />
+        @Html.LabelFor(x=>x.ImageUrl)
+        @Html.EditorFor(x=>x.ImageUrl)
+        @Html.ValidationMessageFor(x=>x.ImageUrl)
+        <br /><br />
+        <input type="submit" value="Post Item" />
+    </form>
+</div>
+

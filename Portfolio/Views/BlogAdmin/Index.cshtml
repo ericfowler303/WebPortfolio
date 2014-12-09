@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Portfolio.Models.BlogPost>
+@{
+    ViewBag.Title = "Blog Post Admin";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2>Blog Post Admin</h2>
+    <a href="@Url.Action("Create", "BlogAdmin")">Create a new Post</a>
+    <br/>
+    <h3>Current Blog Posts:</h3>
+    @foreach (var post in Model)
+    {
+        <div>@post.Title</div>
+    }
+</div>

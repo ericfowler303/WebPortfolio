@@ -11,11 +11,13 @@ namespace Portfolio.Controllers
         Models.sp5EricEntities contactDb = new Models.sp5EricEntities();
 
         // GET: Contact
+        [HttpGet]
         public ActionResult Index()
         {
             return View();
         }
 
+        [HttpPost]
         public ActionResult SendContact(FormCollection values)
         {
             // Add the contact info to the database
