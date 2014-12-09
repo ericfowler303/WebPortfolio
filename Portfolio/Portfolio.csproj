@@ -268,9 +268,9 @@
     <Content Include="Views\Contact\ThankYou.cshtml" />
     <Content Include="Content\resume.pdf" />
     <Content Include="Content\cometlander-demo.webm" />
-    <Content Include="Views\BlogAdmin\Index.cshtml" />
     <Content Include="Views\BlogAdmin\Create.cshtml" />
     <Content Include="Views\BlogAdmin\PostSubmitted.cshtml" />
+    <Content Include="Views\BlogAdmin\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
