@@ -1,0 +1,35 @@
+<html ng-app="weather">
+<head>
+	<title>Precipitation using OpenWeatherMap, Leaflet and AngularJS</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css">
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+	<script src="angular-leaflet-directive.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<style>
+		html,body {
+		height: 90%;
+		}
+		.angular-leaflet-map {
+		height: 100%;
+		}
+	</style>
+</head>
+<body>
+<div ng-controller="LayersSimpleController">
+<h4>Live precipitation using OpenWeatherMap, Leaflet and AngularJS</h4>
+	<div class="container row">
+		<h5>Enter Location: </h5>
+		<form ng-controller="FormController" ng-submit="updateLocation()">
+			<input type="text" placeholder="Enter an address or city name" style="width:400px;" ng-model="locationInput"></input>
+			<button class="btn" type="submit" value="Lookup">Lookup</button>
+			<span> current lat:{{denver.lat}} lon: {{denver.lng}}</span>
+		</form>
+	</div>
+	
+	    <leaflet center="denver" layers="layers" defaults="defaults"></leaflet>
+	</div>
+</body>
+</html>

@@ -11,6 +11,11 @@ namespace Portfolio
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/js/jquery.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+                        "~/Scripts/jquery-1.11.1.min.js",
+                        "~/Scripts/jquery.validate.min.js",
+                        "~/Scripts/jquery.validate.unobtrusive.min.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/js/bootstrap.js",
                       "~/Scripts/js/bootstrap.min.js"));

@@ -101,6 +101,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularWeatherMap\angular-leaflet-directive.min.js" />
+    <Content Include="AngularWeatherMap\app.js" />
+    <Content Include="AngularWeatherMap\map.html" />
+    <Content Include="Content\angular-map.png" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\cometlander-demo.mp4" />
     <Content Include="Content\Work\CheeseFinder.exe" />
@@ -271,6 +275,8 @@
     <Content Include="Views\BlogAdmin\Create.cshtml" />
     <Content Include="Views\BlogAdmin\PostSubmitted.cshtml" />
     <Content Include="Views\BlogAdmin\Index.cshtml" />
+    <Content Include="Views\BlogAdmin\Edit.cshtml" />
+    <Content Include="Views\BlogAdmin\Delete.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

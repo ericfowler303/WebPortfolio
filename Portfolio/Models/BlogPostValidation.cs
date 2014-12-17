@@ -25,5 +25,7 @@ namespace Portfolio.Models
 
         [DataType(DataType.Url), Display(Name="Image URL")]
         public string ImageUrl { get; set; }
+        [Display(Name="Date Created")]
+        public DateTime DateCreated { get; set; }
     }
 }
