@@ -277,6 +277,7 @@
     <Content Include="Views\BlogAdmin\Index.cshtml" />
     <Content Include="Views\BlogAdmin\Edit.cshtml" />
     <Content Include="Views\BlogAdmin\Delete.cshtml" />
+    <Content Include="Views\Home\AngularWeatherMap.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
